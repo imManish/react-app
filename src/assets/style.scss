@@ -1,0 +1,9 @@
+@import "./utils/display";
+@import "./utils/variable";
+
+body{
+    background-color: $backgound;
+}
+@import "./main.scss";
+@import "./components/home.scss";
+

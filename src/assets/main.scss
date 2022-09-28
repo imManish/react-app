@@ -1,0 +1,76 @@
+@import "./utils/variable";
+
+
+.main{
+    .container {
+        background-color: $backgound;
+        height: $h-100;
+        display: flex;
+        align-items: $center;
+        justify-content: $center;
+        
+        .wrap-container {
+            background-color: #fff;
+            padding: $p-20 $p-60;   
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: $w-10;
+            align-items: center;
+            
+            .logo {
+                color: $logo;
+                font-size: $font-size-15;
+                font-weight: $font-weight-bold  
+            }
+    
+            .title{
+                color: $logo;
+                font-size: $font-size-12;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: $w-15;
+    
+                input{
+                    padding: $p-15;
+                    width:250px;
+                    border: none;
+                    //border-radius: 10px;
+                    border-bottom: 1px solid #3A8A7F;
+                    &::placeholder {
+                        color:rgb(175, 175, 175)
+                    }                
+                }
+                button{
+                    background-color:#3A8A7F;
+                    color:#fff;
+                    padding:$p-15;
+                    font-weight: $font-weight-bold;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;                
+                }
+                label{
+                    display: flex;
+                    align-items: center;
+                    gap: $w-10;
+                    color: #3A8A7F;
+                    font-size: $font-size-12;
+                    cursor: pointer;
+    
+                    img{
+                        width: 32px;
+                    }
+                }
+            }
+            p {
+              color: #3A8A7F;      
+              font-size: $font-size-12;
+              margin-top: 10px;          
+            }
+        }
+    }
+}
